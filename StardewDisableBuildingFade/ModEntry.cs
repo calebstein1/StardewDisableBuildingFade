@@ -32,7 +32,7 @@ internal sealed class ModEntry : Mod
             configMenu.Register(
                 mod: ModManifest,
                 reset: () => Config = new ModConfig(),
-                save: () => Helper.WriteConfig(Config)
+                save: () => helper.WriteConfig(Config)
             );
             
             configMenu.AddBoolOption(
