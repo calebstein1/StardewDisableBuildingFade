@@ -6,5 +6,5 @@
   "UniqueID": "calebstein1.StardewDisableBuildingFade",
   "EntryDll": "StardewDisableBuildingFade.dll",
   "MinimumApiVersion": "3.0.0",
-  "UpdateKeys": [ "GitHub:calebstein1/StardewDisableBuildingFade" ]
+  "UpdateKeys": [ "GitHub:calebstein1/StardewDisableBuildingFade", "Nexus:24558" ]
 }
