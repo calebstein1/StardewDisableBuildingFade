@@ -1,10 +1,10 @@
 {
-  "Name": "Disable Building Fade",
+  "Name": "StardewDisableBuildingFade",
   "Author": "calebstein1",
-  "Version": "0.1",
+  "Version": "0.1.0",
   "Description": "Disables buildings becoming translucent when the player walks behind",
-  "UniqueID": "calebstein1.disablebuildingfade",
-  "EntryDll": "DisableBuildingFade.dll",
+  "UniqueID": "calebstein1.StardewDisableBuildingFade",
+  "EntryDll": "StardewDisableBuildingFade.dll",
   "MinimumApiVersion": "3.0.0",
   "UpdateKeys": []
 }
