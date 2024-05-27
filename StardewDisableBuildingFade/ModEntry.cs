@@ -1,5 +1,7 @@
 using HarmonyLib;
 using StardewModdingAPI;
+using StardewValley.Buildings;
+using StardewValley.GameData.Buildings;
 
 namespace StardewDisableBuildingFade;
 
@@ -10,13 +12,13 @@ internal sealed class ModEntry : Mod
         var harmony = new Harmony(ModManifest.UniqueID);
         
         harmony.Patch(
-            original: AccessTools.Constructor(typeof(StardewValley.GameData.Buildings.BuildingData)),
-            postfix: new HarmonyMethod(typeof(ModEntry), nameof(DisableFadePrefix))
+            original: AccessTools.Method(typeof(Building), "UpdateTransparency"),
+            prefix: new HarmonyMethod(typeof(ModEntry), nameof(DisableFadePrefix))
         );
     }
 
-    private void DisableFadePrefix()
+    private static bool DisableFadePrefix()
     {
-        
+        return false;
     }
 }
